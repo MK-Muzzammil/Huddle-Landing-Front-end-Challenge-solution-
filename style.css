@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&display=swap');
+*{
+  margin: 0;padding: 0;box-sizing: border-box;
+}
+
+:root{
+
+--Pink: hsl(322, 100%, 66%);
+--Very-Pale-Cyan: hsl(193, 100%, 96%);
+--Very-Dark-Cyan: hsl(192, 100%, 9%);
+--Grayish-Blue: hsl(208, 11%, 55%);
+--white-bg-Color:hsl(0,0%,100%);
+
+--f-size:18px;
+--f-heading-w:600;
+--f-heading-f-Family:'Poppins', sans-serif;
+
+--f-body-CTA-LW:400;
+--f-body-CTA-HW:700;
+--f-body-CTA-f-Family:'Open Sans', sans-serif;
+
+};
+
+body,html{
+  font-size: var(--f-size);
+}
+.headerContainer{
+  display: flex;
+  flex-direction: column;
+  gap:1.5rem;
+  
+  background-image: url("images/bg-hero-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  border: 1px solid red;
+
+
+}
+.navBarCOntainer{
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem;
+
+}
+.headingClass{
+  font-family: var(--f-heading-f-Family);
+  font-weight: var(--f-heading-w);
+  color:var(--Very-Dark-Cyan);
+  padding-block: 0.5rem;
+
+
+}
+
+.headerParagraphColor{
+  color: var(--Very-Dark-Cyan);
+  font-weight: var(--f-body-CTA-LW);  
+}
+
+.bodyparagraphClass{
+  font-family: var(--f-body-CTA-f-Family);
+  font-weight: var(--f-body-CTA-LW);
+  color: var(--Grayish-Blue);
+  padding-block: 1rem;
+
+}
+.footerTextDec{
+  font-family: var(--f-body-CTA-f-Family);
+  font-weight: var(--f-body-CTA-LW);
+  color:var(--white-bg-Color);
+
+}
+
+
+
+
+.logoContainer img ,.contactinfoContainer img{
+  max-width: 9rem;
+
+}
+.sideNavButtonCon button{
+  height: 1.8rem;
+  width: 7rem;
+  text-align: center;
+  border-radius: 15px;
+  background-color: var(--white-bg-Color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  outline: none;
+  color:var(--Grayish-Blue);
+
+}
+.heroContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.heroContentContainer{
+  display: flex;
+  flex-direction: column;
+  gap:1.3rem;
+  padding: 3rem;
+  max-width: 32rem;
+}
+.heroContentContainer h1 p{
+  max-width: 100%;
+}
+.buttonContainer button{
+  height:2.3rem;
+  width: 12.5rem;
+  text-align: center;
+  border-radius: 15px;
+  background-color: var(--Pink);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color:var(--white-bg-Color);
+  border: none;
+  outline: none;
+
+}
+
+
+
+.heroImageContainer{
+  max-width: 40rem;
+  padding: 1.3rem;
+}
+.heroImageContainer img{
+  max-width: 100%;
+}
+
+
+
+/* =======================Main ====Cars Section ======================== */
+.mainBodyContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardsSection{
+  display: flex;
+  flex-direction: column;
+  
+  max-width: 80rem;
+  /* max-height: 23rem; */
+  gap: 1.6rem;
+}
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem;
+  padding: 2rem;
+
+  max-width: 100%;
+ 
+  
+  background-color: var(--white-bg-Color);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+
+}
+.cardImageContainer{
+  max-width: 100%;
+}
+.cardImageContainer img{
+  max-width: 90%;
+}
+
+.cardContentContainer{
+  max-width: 35rem;
+}
+.cardContentContainer h2,p{
+  max-width: 100%;
+
+}
+
+/* ========================================footer Container=============================== */
+.footerContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-inline: 2rem;
+  gap:1rem;
+  background-color: var(--Very-Dark-Cyan);
+  color: var(--white-bg-Color);
+  padding-top: 4rem;
+  padding-bottom: 2.5rem;
+  font-size: 0.7rem;
+
+}
+.cardOnFooter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+  border-radius: 10px;
+
+  background-color: var(--white-bg-Color);
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  
+  max-width: 26rem;
+  height: 10rem;
+  position: relative;
+  top:2rem;
+  padding: 1rem;
+  margin: 0 auto;
+}
+.contactinfoContainer{
+  display: flex;
+  flex-direction: column;
+  gap:1.5rem;
+  max-width: 25rem; 
+
+}
+.anchorTagsContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+
+
+}
+.anchorTagDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.anchorTagDiv a{
+  color: var(--Very-Pale-Cyan);
+  text-decoration: none;
+}
+
+.iconsAndCopyrightContainer{
+  display: flex;
+  flex-direction: column;
+
+  
+
+}
+
+.iconsContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+  padding-block: 4rem;
+}
+
+
+
+/* ====================================Active States Hovering ========================== */
+button:hover{
+  cursor: pointer;
+  
+}
+
+a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+
+}
+.Icon a i:hover{
+  color: var(--Pink) !important;
+
+}
+
+
+/* ===================================Media Queries =================================== */
+
+@media screen and (max-width:800px) {
+  .heroContainer{
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  
+}
+@media screen and (max-width:560px) {
+  .footerContainer{
+    flex-direction: column;
+   
+  }
+
+  .anchorTagsContainer{
+    flex-direction: column;
+    gap:1rem;
+  }
+  .iconsAndCopyrightContainer{
+    align-items: center;
+    
+  }
+  
+}
+@media screen and (max-width:700px) {
+  #growTogetherDivision,#YourUsersDivision{
+    flex-wrap: wrap-reverse;
+    text-align: center;
+  }
+  #FlowingConversationDivision{
+    flex-wrap: wrap;
+    text-align: center;
+
+  }
+  
+  
+}
